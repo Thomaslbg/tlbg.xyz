@@ -1,0 +1,18 @@
+.navbar{
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between
+}
+
+.navbar ul{
+  font-size: 16px;
+}
+
+.navbar li{
+  display: inline-block;
+}
+
+.navbar li:not(:last-child) {
+  margin-right: 16px;
+}
