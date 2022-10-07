@@ -18,10 +18,12 @@
       <nav class="navbar">
         <div id="logo"><span>T</span></div>
         <ul class="nav">
+          <li><a href="">à propos</a></li>
           <li><a href="">projets</a></li>
           <li><a href="">expériences</a></li>
-          <li><a href="">à propos</a></li>
-          <li><a href="">contact</a></li>
+          <li><a href="">liens</a></li>
+          <li><a href="" class="cv">curriculum vitae</a></li>
+
         </ul>
 
         <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
@@ -32,23 +34,70 @@
           </svg>
         </button>
       </nav>
-      <div class="presentation">
-        <div class="A">
-          Bonjour, je suis
+      <section id="page1">
+        <div class="presentation">
+          <div class="A">
+            Bonjour, je suis
+          </div>
+          <div class="B">
+            Thomas Lebegue.
+          </div>
+          <div class="C">
+            Je fais du développement web.
+          </div>
+          <div class="D">
+            <p>Après 10 ans à travailler dans le marketing digital et le produit, j’ai décidé d’apprendre à coder et de changer de carrière en 2022.</p>
+          </div>
+          <a href="" class="btn">
+            Voir mes projets
+          </a>
         </div>
-        <div class="B">
-          Thomas Lebegue.
+      </section>
+      <section id="page2">
+        <h2>Quelques mots sur moi</h2>
+        <div class="a-propos">
+          <div class="text">
+            <p>
+              Bonjour,
+              Je suis Thomas et je me passione depuis très jeune pour le digital et le monde de la tech.
+            </p>
+            <p>
+              J'ai travaillé pendant 10 ans dans le marketing m'occupant principalement des sujets d'acquisition et d'analytics. Je suis passé par des agences (Effilab), des plateformes (Meta) et des startups (Jellynote, Mobile Club, Rutabago).
+            </p>
+            <p>
+              En 2021 identifiant un vrai besoin chez Rutabago, je me consacre au produit et me forme sur les sujets UX/UI.
+              Puis en 2022, me sentant un réel intérêt pour le sujet depuis longtemps, je décide de faire un bootcamp au Wagon pour apprendre le code.
+            </p>
+            <p>
+              Mes technologies de prédilection :
+            </p>
+            <div class="skills">
+              <div>
+                <h3>Développement</h3>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>Javascript</li>
+                  <li>HTML/CSS</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Design/no code</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Wordpress</li>
+                  <li>Webflow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="img/LEBEGUE-Thomas.png" alt="Thomas LEBEGUE">
+          </div>
         </div>
-        <div class="C">
-          Je fais du développement web.
-        </div>
-        <div class="D">
-          <p>Après 10 ans à travailler dans le marketing digital et le produit, j’ai décidé d’apprendre à coder et de changer de carrière en 2022.</p>
-        </div>
-        <a href="" class="btn">
-          Voir mes projets
-        </a>
-      </div>
+      </section>
+      <section id="page3">
+        <h2>Projets</h2>
+      </section>
     </div>
     <script>
       const menuHamburger = document.querySelector(".menu")

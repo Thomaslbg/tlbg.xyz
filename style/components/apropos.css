@@ -1,0 +1,65 @@
+.a-propos{
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.image{
+  max-width: 300px;
+  filter: grayscale(30%);
+  margin-top: 16px;
+}
+
+.image:hover{
+  filter: grayscale(0%);
+  transition: .3s ease-in-out;
+}
+
+.a-propos img{
+  width: auto;
+  height : auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+.text{
+  max-width: 60%;
+}
+
+
+.skills{
+  display: flex;
+  gap: 32px;
+
+}
+
+.skills h3{
+  color: var(--green);
+}
+
+
+.skills li::before {content: "• "; color: var(--green)}
+
+.skills ul{
+  list-style: none;
+  padding-inline-start: 16px;
+}
+
+
+@media screen and (max-width: 600px){
+  .text{
+    max-width: 100%;
+  }
+  .a-propos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .image{
+    max-width: 200px;
+    margin-top: 16px;
+  }
+}

@@ -1,3 +1,18 @@
 .container{
-  padding: 0px clamp(4px, 10%, 16px);;;
+  padding: 0px clamp(4px, 10%, 40px);;;
+}
+
+#page1{
+  min-height: calc(100vh - 58px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2{
+  min-height: calc(100vh - 58px);
+}
+
+section h2{
+    color: var(--purple);
 }
