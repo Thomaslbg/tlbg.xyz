@@ -25,3 +25,25 @@
   outline: 0;
   font-weight: 600;
   }
+
+.details li::before {content: "• "; color: var(--green)}
+.details li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.details ul{
+  list-style: none;
+  padding-inline-start: 16px;
+}
+
+.reco-profile{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+
+
+.avatar{
+  border-radius: 50px;
+  height: 60px;
+}
