@@ -1,0 +1,27 @@
+.experiences{
+
+}
+
+.active-tabs{
+  background-color: var(--green) !important;
+  color: var(--black) !important;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: 1s ease-in-out;
+}
+
+.bar{
+  width: 100%;
+  overflow: hidden;
+}
+.bar-items{
+  color: var(--white);
+  padding: 8px 16px;
+  background-color: transparent;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  font-weight: 600;
+  }

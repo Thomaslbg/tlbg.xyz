@@ -19,8 +19,8 @@
         <div id="logo"><span>T</span></div>
         <ul class="nav">
           <li><a href="">à propos</a></li>
-          <li><a href="">projets</a></li>
           <li><a href="">expériences</a></li>
+          <li><a href="">projets</a></li>
           <li><a href="">liens</a></li>
           <li><a href="" class="cv">curriculum vitae</a></li>
 
@@ -96,7 +96,58 @@
         </div>
       </section>
       <section id="page3">
-        <h2>Projets</h2>
+        <div class="experiences">
+          <h2>Expériences</h2>
+          <p>Mon parcours professionnel</p>
+
+          <div class="bar">
+            <button class="bar-items tablink active-tabs" onclick="openExp(event,'Rutabago')">Rutabago</button>
+            <button class="bar-items tablink" onclick="openExp(event,'mobile.club')">mobile.club</button>
+            <button class="bar-items tablink" onclick="openExp(event,'Meta')">Meta</button>
+            <button class="bar-items tablink" onclick="openExp(event,'Jellynote')">Jellynote</button>
+            <button class="bar-items tablink" onclick="openExp(event,'Effilab')">Effilab</button>
+          </div>
+
+          <div id="Rutabago" class="exp">
+            <h2>Responsable expérience utilisateur @Rutabago</h2>
+            <p class="date">sept. 2021 - mai 2022</p>
+            <ul>
+              <li><p>London is the capital exp of England.</p></li>
+              <li><p>London is the capital exp of England.</p></li>
+              <li><p>London is the capital exp of England.</p></li>
+            </ul>
+            <h2>Responsable acquisition @Rutabago</h2>
+            <p class="date">mai 2020 - sept. 2021</p>
+            <ul>
+              <li><p>London is the capital exp of England.</p></li>
+              <li><p>London is the capital exp of England.</p></li>
+              <li><p>London is the capital exp of England.</p></li>
+            </ul>
+          </div>
+
+          <div id="mobile.club" class="exp" style="display:none">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+          </div>
+
+          <div id="Meta" class="exp" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="Jellynote" class="exp" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="Effilab" class="exp" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </div>
+
+        <script>
+
+        </script>
+
       </section>
     </div>
     <script>
@@ -107,6 +158,20 @@
         navLinks.classList.toggle('mobile-menu')
       })
     // document.write("<script src='/js/burger.js'><\/script>");
+
+    function openExp(evt, expName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("exp");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active-tabs", "");
+        }
+        document.getElementById(expName).style.display = "block";
+        evt.currentTarget.className += " active-tabs";
+      }
     </script>
 
   </body>
