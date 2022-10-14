@@ -1,0 +1,67 @@
+.card-project {
+  display: block;
+  overflow: auto;
+  min-height: 180px;
+  /* border: 2px solid var(--green); */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.tech-icon{
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+
+.project-img {
+  height: 100%;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+.card-project h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--green);
+  margin: 0;
+}
+
+
+.techno{
+  list-style: none;
+  padding:8px;
+  max-width: 180px;
+  border-radius: 8px;
+  margin-block-start: 8px;
+  margin-block-end: 0px;
+  background-color:rgba(255, 255, 255, 0.094);;
+}
+
+.links{
+  list-style: none;
+  padding:8px;
+  margin-block-start: 8px;
+  margin-block-end: 0px;
+}
+
+.card-project li{
+  display: inline-block;
+}
+
+.card-project p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-project .card-project-infos {
+  padding: 16px;
+}
