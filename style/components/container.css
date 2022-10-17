@@ -1,9 +1,11 @@
 .container{
-  padding: 0px clamp(4px, 10%, 40px);;;
+  padding: 0px clamp(4px, 10%, 40px);
+  z-index: 0;
 }
 
 #page1{
   min-height: calc(100vh - 58px);
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +15,40 @@
   min-height: calc(100vh - 58px);
 }
 
+#page3{
+  min-height: calc(100vh - 58px);
+  margin-bottom: 40px;
+}
+
+
 section h2{
     color: var(--purple);
+}
+
+
+.title-line {
+  content: "";
+  /* display: block; */
+  /* position: relative; */
+  min-width: clamp(50px, 100px, 300px);
+  margin-left: 20px;
+  color: var(--purple);
+  top: 50%;
+  font-family: "Silkscreen";
+}
+
+.title-num{
+  color: var(--purple);
+  font-family: "Silkscreen";
+  margin-right: 8px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+}
+
+i{
+  color:var(--white);
+  text-decoration: none;
 }

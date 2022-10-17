@@ -15,26 +15,26 @@
 
   </head>
   <body>
+    <nav class="navbar">
+      <div id="logo"><span>T</span></div>
+      <ul class="nav">
+        <li><a href="">à propos</a></li>
+        <li><a href="">expériences</a></li>
+        <li><a href="">projets</a></li>
+        <li><a href="">liens</a></li>
+        <li><a href="" class="cv">curriculum vitae</a></li>
+
+      </ul>
+
+      <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </nav>
     <div class="container">
-      <nav class="navbar">
-        <div id="logo"><span>T</span></div>
-        <ul class="nav">
-          <li><a href="">à propos</a></li>
-          <li><a href="">expériences</a></li>
-          <li><a href="">projets</a></li>
-          <li><a href="">liens</a></li>
-          <li><a href="" class="cv">curriculum vitae</a></li>
-
-        </ul>
-
-        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-          <svg width="50" height="50" viewBox="0 0 100 100">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-          </svg>
-        </button>
-      </nav>
       <section id="page1">
         <div class="presentation">
           <div class="A">
@@ -55,7 +55,9 @@
         </div>
       </section>
       <section id="page2">
-        <h2>Quelques mots sur moi</h2>
+        <div class = title>
+          <span class="title-num">01.</span><h2>Quelques mots sur moi</h2><div class="title-line">----------</div>
+        </div>
         <div class="a-propos">
           <div class="text">
             <p>
@@ -98,7 +100,9 @@
       </section>
       <section id="page3">
         <div class="experiences">
-          <h2>Expériences</h2>
+          <div class = title>
+            <span class="title-num">02.</span><h2>Expériences</h2><div class="title-line">----------</div>
+          </div>
           <p>Mon parcours professionnel</p>
 
           <div class="bar">
@@ -194,7 +198,9 @@
 
       </section>
       <section id="page3">
-        <h2>Projets</h2>
+        <div class = title>
+          <span class="title-num">04  .</span><h2>Projets</h2><div class="title-line">----------</div>
+        </div>
         <div>
           <div class="card-project">
             <img class="project-img" style="filter: invert(80%)" src="img/logos/vairinho.png" />
@@ -209,7 +215,7 @@
 
               </p>
               <ul class="links">
-                <li><i class="fa-solid fa-link"></i></li>
+                <li><a target="_blank" href="http://docteurvairinho.fr/" class=""><i class="fa-solid fa-link"></i></a></li>
               </ul>
             </div>
           </div>
@@ -226,13 +232,13 @@
                 </ul>
               <p>Site de jeu type Cemantix basé sur les synopsis de films réalisé à 4 en 10 jours avec deux modes de jeux. Gros travail sur les vérifications des inputs et le javascript pour le mode timer.</p>
               <ul class="links">
-                <li><i class="fa-solid fa-link"></i></li>
-                <li><i class="fa-brands fa-github"></i></li>
+                <li><a target="_blank" href="http://www.synopsix.xyz/"><i class="fa-solid fa-link"></i></a></li>
+                <li><a target="_blank" href="https://github.com/Thomaslbg/synopsix"><i class="fa-brands fa-github"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="card-project">
-            <img class="project-img" src="img/logos/synopsix.svg" />
+            <img class="project-img" src="img/logos/logo-guitar-pick.svg" />
             <div class="card-project-infos">
               <h2>Guitar-pick</h2>
               <p>Technologies utilisées :</p>
@@ -244,23 +250,40 @@
                 </ul>
               <p>Clône de Airbnb pour la location de guitar réalisé à 4 en 5 jours.</p>
               <ul class="links">
-                <li><i class="fa-solid fa-link"></i></li>
-                <li><i class="fa-brands fa-github"></i></li>
+                <li><a target="_blank" href="https://guitar-pick-jjkincaid.herokuapp.com/"><i class="fa-solid fa-link"></i></a></li>
+                <li><a target="_blank" href="https://github.com/Thomaslbg/guitar-pick"></a><i class="fa-brands fa-github"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="card-project">
-            <img class="project-img" src="img/logos/synopsix.svg" />
+            <img class="project-img" src="img/logos/logo-rutabago.svg" />
             <div class="card-project-infos">
               <h2>Rutabago</h2>
               <p>Technologies utilisées :</p>
                 <ul class="techno">
+
                   <li><img class="tech-icon" src="img/logos/figma-icon.svg" /></li>
                 </ul>
               <p>Design system et maquettes complètes du site réalisés pour le site Rutabago</p>
               <ul class="links">
-                <li><i class="fa-solid fa-link"></i></li>
-                <li><i class="fa-brands fa-figma"></i></li>
+                <li><a target="_blank" href="https://www.figma.com/file/Jj9kZDYz2k5lt0zWVuqr27/Rutabago-public?node-id=0%3A1"><i class="fa-brands fa-figma"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-project">
+            <img class="project-img" src="img/logos/codewars.svg" />
+            <div class="card-project-infos">
+              <h2>Codewars Katas</h2>
+              <p>Technologies utilisées :</p>
+                <ul class="techno">
+                  <li><img class="tech-icon" src="img/logos/ruby-original.svg" /></li>
+                </ul>
+              <p>Training my ruby skills on codewars and documenting them on Github.</p>
+              <br>
+              <a target="_blank" href="https://www.codewars.com/users/Thomaslbg"><img class="project-img" src="https://www.codewars.com/users/Thomaslbg/badges/large" /></a>
+              <ul class="links">
+                <li><a target="_blank" href="https://github.com/Thomaslbg/CodeWars-Ruby-Solutions"></a><i class="fa-brands fa-github"></i></a></li>
+                <li></li>
               </ul>
             </div>
           </div>
@@ -268,13 +291,22 @@
 
         </div>
       </section>
+      <section id="page3">
+        <div class = title>
+          <span class="title-num">04.</span><h2>Contacts</h2><div class="title-line">----------</div>
+        </div>
+        <p>thomas.lebegue@gmail.com</p>
+      </section>
     </div>
     <script>
       const menuHamburger = document.querySelector(".menu")
       const navLinks = document.querySelector(".nav")
+      const container = document.querySelector(".container")
 
       menuHamburger.addEventListener('click',() => {
         navLinks.classList.toggle('mobile-menu')
+        container.classList.toggle('hide')
+
       })
     // document.write("<script src='/js/burger.js'><\/script>");
 
