@@ -5,21 +5,21 @@
 
 #page1{
   min-height: calc(100vh - 58px);
-  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#page2{
-  min-height: calc(100vh - 58px);
-}
+
 
 #page3{
-  min-height: calc(100vh - 58px);
   margin-bottom: 40px;
 }
 
+section{
+  min-height: calc(100vh - 58px);
+  padding-top: 66px;
+}
 
 section h2{
     color: var(--purple);

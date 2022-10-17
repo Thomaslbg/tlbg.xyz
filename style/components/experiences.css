@@ -1,6 +1,6 @@
-.experiences{
+/* .experiences{
 
-}
+} */
 
 .active-tabs{
   background-color: var(--green) !important;
@@ -41,6 +41,11 @@
   align-items: center;
 }
 
+.exp-panel{
+  background-color: var(--black) !important;
+  padding: 8px;
+  border-radius: 8px;
+}
 
 
 .avatar{

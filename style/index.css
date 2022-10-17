@@ -31,3 +31,7 @@ body{
   50%{background-position:100% 61%}
   100%{background-position:0% 40%}
 }
+
+html{
+  scroll-behavior: smooth;
+}
