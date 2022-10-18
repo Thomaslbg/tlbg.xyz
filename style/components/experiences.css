@@ -10,6 +10,39 @@
   transition: 1s ease-in-out;
 }
 
+.date{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.exp h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--green);
+}
+.exp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+
+.reco{
+  max-width: 500px;
+  min-width: 200px;
+}
+
+
+.details{
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.break {
+  flex-basis: 8px;
+  height: 0;
+}
+
 .bar{
   width: 100%;
   overflow: hidden;
@@ -35,6 +68,7 @@
   padding-inline-start: 16px;
 }
 
+
 .reco-profile{
   display: flex;
   gap: 32px;
@@ -42,8 +76,8 @@
 }
 
 .exp-panel{
-  background-color: var(--black) !important;
-  padding: 8px;
+  background-color: #3e3e3e !important;
+  padding: 16px;
   border-radius: 8px;
 }
 
@@ -52,3 +86,11 @@
   border-radius: 50px;
   height: 60px;
 }
+
+
+/*
+@media screen and (max-width: 600px){
+  .exp{
+    display: block;
+  }
+} */
