@@ -6,8 +6,9 @@
 
 .image{
   max-width: 300px;
-  /* filter: grayscale(30%); */
+  filter: grayscale(30%);
   margin-top: 16px;
+  z-index: -1;
 }
 
 .image:hover{
