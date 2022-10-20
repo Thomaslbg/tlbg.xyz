@@ -53,6 +53,7 @@ section h2{
 .title-num{
   color: var(--purple);
   font-family: "Silkscreen";
+  font-size: 24px;
   margin-right: 8px;
 }
 

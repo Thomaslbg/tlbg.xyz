@@ -7,7 +7,7 @@
   color: var(--black) !important;
   font-weight: 700;
   border-radius: 8px;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .date{
@@ -76,7 +76,7 @@
 }
 
 .exp-panel{
-  background-color: #3e3e3e !important;
+  background-color: var(--grey);
   padding: 16px;
   border-radius: 8px;
 }
