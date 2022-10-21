@@ -2,8 +2,12 @@
 @import "config/fonts.css";
 @import "config/variables.css";
 
+html{
+  background: linear-gradient(55deg, #04080f, #3e3e3e);
+}
 
 body{
+  width:100%;
   /* background-color: var(--black); */
   color: var(--white);
   font-family: "Inter", "sans-serif";

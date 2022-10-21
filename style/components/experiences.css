@@ -10,6 +10,7 @@
   transition: 0.5s ease-in-out;
 }
 
+
 .date{
   margin-top: 8px;
   margin-bottom: 8px;
@@ -57,6 +58,7 @@
   display: block;
   outline: 0;
   font-weight: 600;
+  cursor: pointer;
   }
 
 .details li::before {content: "• "; color: var(--green)}
